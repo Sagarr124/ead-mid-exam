@@ -18,6 +18,7 @@ function App() {
 
   return (
     <div className="App">
+      {/* TASK-A */}
       <h1>Polling App</h1>
       <UserParticipation qna={qna} />
     </div>
