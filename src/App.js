@@ -1,5 +1,6 @@
 import './App.css';
 import UserParticipation from './TASK-A/components/UserParticipation';
+import Timer from './TASK-B/components/Timer';
 
 function App() {
   let qna = {
@@ -19,8 +20,11 @@ function App() {
   return (
     <div className="App">
       {/* TASK-A */}
-      <h1>Polling App</h1>
-      <UserParticipation qna={qna} />
+      {/* <h1>Polling App</h1>
+      <UserParticipation qna={qna} /> */}
+
+      {/* TASK-B */}
+      <Timer />
     </div>
   );
 }
