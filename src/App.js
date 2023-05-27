@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import UserParticipation from './TASK-A/components/UserParticipation';
 
 function App() {
+  let qna = {
+    question: "What is your favorite programming language?",
+
+    choices: [
+      { id: 1, label: "JavaScript", votes: 0 },
+
+      { id: 2, label: "Python", votes: 0 },
+
+      { id: 3, label: "Java", votes: 0 },
+
+      { id: 4, label: "C#", votes: 0 },
+    ],
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Polling App</h1>
+      <UserParticipation qna={qna} />
     </div>
   );
 }
